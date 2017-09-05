@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <base href="/">
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+        <title>Blood Donation Assignment</title>
+
+        <!-- load Picnic CSS library -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/picnicss/6.3.2/picnic.min.css">
+        
+        <!-- load Esri CSS -->
+        <link rel="stylesheet" href="https://js.arcgis.com/4.3/esri/css/view.css">
+
+        <!-- load this app's styles -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+    <!-- display the application -->
+    <body>
+        <playground-app>Loading...</playground-app>
+
+        <!-- load libraries -->
+        <script src="node_modules/zone.js/dist/zone.js"></script>
+        <script src="node_modules/reflect-metadata/Reflect.js"></script>
+        <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+        <!-- load Esri JS -->
+        <script src="https://js.arcgis.com/4.3/"></script>
+
+        <!-- load esri-system-js library -->
+        <script src="node_modules/esri-system-js/dist/esriSystem.js"></script>
+        
+        <!-- configure SystemJS -->
+        <script src="systemjs.config.js"></script>
+
+        <!-- using esri-system-js: load Esri modules and then bootstrap the app -->
+        <script src="app/load.js"></script>
+    </body>
+</html>
